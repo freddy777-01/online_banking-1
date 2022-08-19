@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CreateBankAccountController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +27,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+Route::get('/create-bank-account', [CreateBankAccountController::class, 'index']);
+Route::post('/create-my-bank-account', [CreateBankAccountController::class, 'CreateBankAccount']);

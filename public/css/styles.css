@@ -1,0 +1,96 @@
+.h{
+    width: auto;
+    margin: 0px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.create-acc-btn{
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    width: 7rem;
+    margin: 2rem auto;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: blue;
+    color:whitesmoke;
+    transition: background-color .3s ease-in-out;
+}
+.create-acc-btn:hover{
+    color:rgb(190, 190, 190);
+    background-color: rgb(86, 86, 255);
+    transform:scale(15px);
+}
+.create-account-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    clear: left;
+}
+.create-account-container .f-item:nth-child(2){
+    width: 65%;
+}
+.input-box{
+    display:flex;
+    flex-direction: column;
+    margin: 0.5rem 0px;
+}
+.input-box small{
+    font-style: italic;
+    color: #2c3036;
+}
+.input-box select{
+    width: auto;
+    height: 2rem;
+    padding: 0.4rem;
+}
+
+.create-account{
+
+    /* border: 2px solid red; */
+}
+.create-account > header{
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    /* border: 2px solid green; */
+}
+.create-account section{
+/* border: 2px solid red; */
+width: 50%;
+margin: 0px  auto;
+}
+.create-account .form-error{
+    color: rgb(255, 65, 65);
+    font-weight: bold;
+}
+.create-account .input-box input,.create-account .input-box select{
+    border-radius: 5px;
+}
+.create-account .input-box button{
+    background: #1F2937;
+    color: white;
+    width: 15rem;
+    border-radius: 5px;
+    padding: 0.25rem;
+    align-self: flex-end;
+}
+
+.notification{
+    display: flex;
+    justify-content: end;
+}
+.notification .alert{
+padding: 0.25rem;
+border-radius: 7px;
+color: black;
+width: 40%;
+}
+.notification .alert-success{
+    background-color: rgb(136, 255, 136);
+}
+.notification .alert-danger{
+    background-color: rgb(255, 154, 154);
+}

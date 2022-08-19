@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('user_accounts', function (Blueprint $table) {
             $table->id();
-            $table->string('account_name');
-            $table->string('account_no');
-            $table->string('account_type');
-            $table->string('account_holder');
+            $table->string('account_name')->unique();
+            $table->string('account_no')->unique();
+            $table->bigInteger('account_type');
+            $table->bigInteger('account_holder');
             $table->string('balance');
             $table->timestamps();
         });
