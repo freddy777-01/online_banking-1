@@ -13,13 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('user_accounts', function (Blueprint $table) {
+        Schema::create('accounts', function (Blueprint $table) {
             $table->id();
-            $table->string('account_name')->unique();
-            $table->string('account_no')->unique();
-            $table->bigInteger('account_type');
-            $table->bigInteger('account_holder');
+            $table->bigInteger('branch_id');
+            $table->string('name');
+            $table->string('acc_number');
+            $table->bigInteger('type_id');
             $table->string('balance');
+            $table->string('balance_currency');
             $table->timestamps();
         });
     }
@@ -31,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_accounts');
+        Schema::dropIfExists('accounts');
     }
 };

@@ -94,3 +94,25 @@ width: 40%;
 .notification .alert-danger{
     background-color: rgb(255, 154, 154);
 }
+
+/* acccount type information */
+.available-acounts>header{
+    border-bottom:1px solid #1F2937;
+    border-style: dashed;
+}
+.available-acounts{
+    background-color: rgb(230, 230, 230);
+    padding: 1rem;
+}
+
+.available-acounts ol{
+    list-style:decimal;
+}
+.available-acounts ol header{
+    font-weight: bolder;
+}
+.available-acounts ul{
+    list-style:disc;
+    margin-left: 2rem;
+}
+/* end of account type information */
