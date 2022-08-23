@@ -60,6 +60,7 @@
 <div class="form-error">{{$errors->first('init-acc-balance')}}</div>
 <form action="/create-my-bank-account" method="post">
 @csrf
+
 <div class="input-box">
 <label for="select-acc-type">Select Type of Account</label>
 <select id="select-acc-type" name="acc-type">
@@ -79,6 +80,13 @@
 <input id="acc-balance" name="init-acc-balance" type="number" placeholder="Set Account Balance">
 <small>Should be greater than 10,000</small>
 </div>
+
+<div class="input-box">
+    <label for="currency-type">Select Type of Account</label>
+    <select id="currency-type" name="currency-type">
+    <option value="Tsh" selected>Tsh</option>
+    </select>
+    </div>
 <div class="input-box">
 <button type="submit">Create Account</button>
 </div>
