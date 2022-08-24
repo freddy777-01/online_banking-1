@@ -17,14 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['middleware' => ['auth']], function(){
-    Route::get('/dashboard', 'App\Http\controllers\DashboardController@index')->name('dashboard');
-});
+// Route::group(['middleware' => ['auth']], function(){
+//     Route::get('/dashboard', 'App\Http\controllers\DashboardController@index')->name('dashboard');
+// });
 
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
 
 Route::get('/user', function () {
