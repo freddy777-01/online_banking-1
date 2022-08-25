@@ -34,7 +34,7 @@ Route::get('/user', function () {
 
 Route::get('/admin', function () {
     return view('admin');
-})->middleware(['auth'])->name('admin');
+})->middleware(['admin'])->name('admin');
 
 
 
